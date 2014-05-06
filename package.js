@@ -7,6 +7,7 @@ Package.on_use(function (api) {
   api.use('deps', ['client', 'server']);
   api.use('underscore', ['client', 'server']);
   api.use('ejson', ['client', 'server']);
+  api.use('reload', 'client');
 
   api.use('templating', 'client');
   api.use('handlebars', 'client');
@@ -66,5 +67,5 @@ Package.on_test(function (api) {
 
   api.add_files('test/client/templates.html', 'client');
   api.add_files('test/client/router.js', 'client');
-  api.add_files('test/client/route_controller.js', 'client');  
+  api.add_files('test/client/route_controller.js', 'client');
 });
